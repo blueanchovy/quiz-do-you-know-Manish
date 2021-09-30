@@ -16,49 +16,49 @@ var highScores = [
 var qna = [
   q1 = {
     question : "What is my full name? ",
-    answer : "Manish Kumar Jha"
+    answer : "MANISH KUMAR JHA"
   },
   q2 = {
     question : "I want to become a Full Stack ________? ",
-    answer : "Developer"
+    answer : "DEVELOPER"
   },
   q3 = {
     question : "I am interested in learning which Javascript framework: React or Angular? ",
-    answer: "React"
+    answer: "REACT"
   },
   q4 = {
     question : "Which superhero do I like more, Superman or Batman? ",
-    answer : "Superman"
+    answer : "SUPERMAN"
   },
   q5 = {
     question : "Do I prefer Apples or Oranges? ",
-    answer : "Apples"
+    answer : "APPLES"
   }
 ];
 
 function welcome() {
   var username = readlineSync.question("What is your name? ");
 
-  console.log("Welcome " + username + " to DO YOU KNOW MANISH!");
+  console.log("Welcome " + username + " to DO YOU KNOW MANISH!\n");
 }
 
 function play(q, a){
-  var answer=readlineSync.question(q);
+  var answer=readlineSync.question(q).toUpperCase();
     if(answer===a){
-      console.log("Right!");
+      console.log("Right! The right answer is "+a);
       score+=1;
     }
     else{
-      console.log("Wrong!");
+      console.log("Wrong! The right answer is "+a);
       score-=1;
     }
-  console.log("Current Score: " + score);
+  console.log("Current Score: " + score+ "\n");
 }
 
 function finalScore(){
-  console.log("Congratulations! you scored: ", score);
+  console.log("\nCongratulations! you scored: ", score);
 
-  console.log("Check out the leaderboard below, ping me if you think you belong there and I'll update it.");
+  console.log("\nCheck out the leaderboard below, ping me if you think you belong there and I'll update it.\n");
 
   highScores.map(score => console.log(score.name, " : ", score.score));
 }

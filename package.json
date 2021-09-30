@@ -1,0 +1,23 @@
+{
+  "name": "quiz-do-you-know-Manish",
+  "version": "1.0.0",
+  "description": "Quiz for my friends to check how well they know me.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blueanchovy/quiz-do-you-know-Manish.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/blueanchovy/quiz-do-you-know-Manish/issues"
+  },
+  "homepage": "https://github.com/blueanchovy/quiz-do-you-know-Manish#readme",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
+}
